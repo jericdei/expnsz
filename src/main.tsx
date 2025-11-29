@@ -8,7 +8,7 @@ import * as TanStackQueryProvider from "./integrations/tanstack-query/root-provi
 import { routeTree } from "./routeTree.gen";
 
 import "./styles.css";
-import { AuthProvider, useAuth } from "./pocketbase/index.tsx";
+import { AuthProvider, useAuth } from "./pocketbase/context";
 import reportWebVitals from "./reportWebVitals.ts";
 
 // Create a new router instance

@@ -17,7 +17,7 @@ import {
 	FieldSet,
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
-import { useAuth } from "@/pocketbase";
+import { useAuth } from "@/pocketbase/context";
 import { type AuthSchema, authSchema } from "@/validations/auth-schema";
 
 const fallbackRedirect = "/dashboard" as const;

@@ -29,7 +29,7 @@ export default function Footer() {
 	];
 
 	return (
-		<footer className="fixed bottom-0 left-0 right-0 bg-neutral-900 border-t border-neutral-800 md:hidden">
+		<footer className="fixed bottom-0 left-0 right-0 bg-neutral-900 border-t border-neutral-800 ">
 			<nav className="container mx-auto">
 				<ul className="flex items-center justify-around">
 					{navItems.map((item) => {

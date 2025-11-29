@@ -2,9 +2,8 @@ import { TanStackDevtools } from "@tanstack/react-devtools";
 import type { QueryClient } from "@tanstack/react-query";
 import { createRootRouteWithContext, Outlet } from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
-import Footer from "@/components/layout/footer";
 import Header from "@/components/layout/header";
-import type { AuthContextType } from "@/pocketbase";
+import type { AuthContextType } from "@/pocketbase/context";
 import TanStackQueryDevtools from "../integrations/tanstack-query/devtools";
 
 interface MyRouterContext {
@@ -21,8 +20,6 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
 				<main className="flex-1 p-4">
 					<Outlet />
 				</main>
-
-				<Footer />
 			</div>
 
 			<TanStackDevtools

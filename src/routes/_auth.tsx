@@ -1,4 +1,5 @@
 import { createFileRoute, Outlet, redirect } from "@tanstack/react-router";
+import Footer from "@/components/layout/footer";
 
 export const Route = createFileRoute("/_auth")({
 	beforeLoad: ({ context, location }) => {
@@ -15,5 +16,10 @@ export const Route = createFileRoute("/_auth")({
 });
 
 function AuthLayout() {
-	return <Outlet />;
+	return (
+		<>
+			<Outlet />
+			<Footer />
+		</>
+	);
 }

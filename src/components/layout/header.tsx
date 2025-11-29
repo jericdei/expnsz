@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "@tanstack/react-router";
-import { LogOut, Menu } from "lucide-react";
-import { useAuth } from "@/pocketbase";
+import { LogOut } from "lucide-react";
+import { useAuth } from "@/pocketbase/context";
 import { Button } from "../ui/button";
 
 export default function Header() {
