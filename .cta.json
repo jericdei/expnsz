@@ -1,0 +1,19 @@
+{
+  "projectName": "expnsz",
+  "mode": "file-router",
+  "typescript": true,
+  "tailwind": true,
+  "packageManager": "bun",
+  "addOnOptions": {},
+  "git": true,
+  "version": 1,
+  "framework": "react-cra",
+  "chosenAddOns": [
+    "biome",
+    "compiler",
+    "shadcn",
+    "t3env",
+    "table",
+    "tanstack-query"
+  ]
+}
