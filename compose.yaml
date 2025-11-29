@@ -1,0 +1,22 @@
+services:
+  pocketbase:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    environment:
+      - POCKETBASE_SUPERADMIN_EMAIL=${POCKETBASE_SUPERADMIN_EMAIL}
+      - POCKETBASE_SUPERADMIN_PASSWORD=${POCKETBASE_SUPERADMIN_PASSWORD}
+    ports:
+      - 55555:8080
+    volumes:
+      - ./src/pocketbase/data:/pb/pb_data
+      - ./src/pocketbase/migrations:/pb/pb_migrations
+      - ./src/pocketbase/hooks:/pb/pb_hooks
+    networks:
+      - expnsz-network
+
+networks:
+  expnsz-network:
+    driver: bridge
